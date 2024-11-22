@@ -1,0 +1,483 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background:rgba(43, 30, 30, 0.7);
+    position: fixed;
+    z-index: 1000;
+    
+
+}
+.logo{
+    width: 80px;
+    height: 60px;
+    margin-left: 10px;
+    float: left;
+    position: fixed;
+
+}
+.search-container {
+    position: absolute;
+    left: 100px;
+    width: 250px; 
+    top: 10px;
+    float: left;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    pointer-events: none; 
+  }
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+.list li{
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: bolder;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/grunge-light-stone-background-with-coffee.avif);
+    background-size: cover;
+    position: relative;
+}
+.home_overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    background:rgba(63, 41, 41,0.7);
+}
+.home_content{
+    width: 60%;
+    /* hero image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home_title{
+    color: white;
+    font-size: 100px;
+
+}
+.home_p{
+    color: rgb(199, 191, 191);
+    font-size: 25px;
+    margin: 15px 0px;
+}
+.home_btn{
+    width: 145px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform:capitalize;
+}
+.home_btn2{
+    width: 145px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    text-transform:capitalize;
+    margin-left: 10px;
+    background: rgb(70, 49, 49);
+    color: white;
+}
+.website{
+    width: 100%;
+    height: 95vh;
+}
+.title_website{
+    margin-top: 55px;
+    text-align: center;
+    font-size: 40px ;
+    text-transform: capitalize;
+}
+.line_website{
+    width: 100px;
+    height: 4px;
+    background: brown;
+    margin: auto;
+    margin-top: -2px;
+    margin-bottom: 80px;
+}
+.fully_parent{
+    /* margin-left: 100px; */
+    padding-left: 80px ;
+    width: 100%;
+    height: 50vh;
+    
+}
+.fully_div{
+    width: 320px;
+    height: 220px;
+    border: 0.2px solid brown;
+    float: left;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.fully_div:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background: rgb(165, 42, 42);
+}
+.fully_div:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    opacity: 0.4;
+    z-index: -1;
+}
+.fully_icon .fully_icon{
+    margin-left: 140px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: rgb(168, 73, 73);
+}
+.fully_title{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.fully_div:hover h2{
+    color: white;
+}
+.fully_p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    color: rgb(114, 90, 90);
+}
+.fully_div:hover p {
+    color: black;
+}
+.fully_btn{
+    margin-left: 115px;
+    text-transform: capitalize;
+    background: white;
+    border: 0cap;
+    color: brown;
+    font-weight: bold;
+    font-size: 15px;
+}
+.fully_div:hover button{
+    background:rgba(165, 42, 42,0.001);
+}
+
+/* //////////////////////////////////////////////////////////// */
+.title_category{
+    text-align: center;
+    font-size: 35px ;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.line_category{
+    width: 60px;
+    height: 4px;
+    background: brown;
+    margin: auto;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+.category{
+    background:rgb(253, 237, 237);
+    width: 100%;
+    height: 100vh;
+    
+}
+.row1, .row2{
+    margin-left: 200px;
+    margin-right: 50px;
+    
+}
+
+.category1, .category2, .category3{
+    width: 300px;
+    height: 200px;
+    border: 0.2px solid white;
+    float: left;
+    margin-right: 20px
+    
+}
+.category1{
+    background: url(../images/Forget\ Starbucks_\ How\ To\ Make\ A\ Delicious\ Latte\ At\ Home.jpg);
+    background-size:cover;
+}
+.category2{
+    background: url(../images/10\ vasos\ que\ tu\ café\ helado\ necesita.jpg);
+    background-size: cover;
+}
+.category3{
+    background: url(../images/Does\ Cheese\,\ Nuts\ or\ Coffee\ Impact\ a\ Ketogenic\ Diet_\ -\ My\ Keto\ Coach.jpg);
+    background-size: cover;
+}
+
+.category4, .category5, .category6{
+    width: 300px;
+    height: 200px;
+    border: 0.2px solid white;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.category4{
+    background: url(../images/Iced-Chai-Tea-Latte.jpg);
+    background-size: cover;
+}
+.category5{
+    background: url(../images/download1.jpg);
+    background-size: cover;
+}
+.category6{
+    background: url(../images/download.jpg);
+    background-size: cover;
+}
+.category_title{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 30px;
+    color: rgb(253, 237, 237);
+}
+.category_p{
+    text-align: center;
+    margin-top: 20px;
+    color: rgb(253, 237, 237);
+}
+.category_icons{
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    font-size: 25px;
+}
+.icon{
+    width: 40px;
+    height: 30px;
+    background:rgb(253, 237, 237);
+    margin-left: 5px;
+    border-radius: 5px;
+}
+/* ////////////////////////////////////////////////////// */
+.offer{
+    width: 100%;
+    height: 100vh;
+}
+.title{
+    text-align: center;
+    font-size: 40px ;
+    margin-top: 60px;
+}
+.line{
+    width: 80px;
+    height: 4px;
+    background: brown;
+    margin: auto;
+    margin-top: -25px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.offer_row1, .offer_row2{
+    margin-left: 170px;
+}
+.offer_div{
+    width: 300px;
+    height: 200px;
+    border: 0.2px solid brown;
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
+    border-radius: 8px;
+    position: relative;
+    
+}
+.offer_div{
+    width: 300px;
+    height: 200px;
+    border: 0.2px solid brown;
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+.offer_div:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background: rgb(165, 42, 42);
+}
+.offer_div:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    opacity: 0.54;
+    z-index: -1;
+}
+.offer_title{
+    width: 270px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 22px;
+ 
+    float: left;
+}
+.offer_div:hover h2{
+    color: brown;
+}
+.offer_p{
+    width: 180px;
+    height: 60px;
+    color: rgb(105, 101, 101);
+    margin-left: 60px;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+.offer_div:hover p{
+    color: black;
+}
+.offer_icon{
+    font-size: 30px;
+    color: brown;
+    float: left;
+    
+}
+/* //////////////////////////////////////////////////////// */
+.img_container{
+    width: 100%;
+    display: block;
+}
+.text_section{
+    width: 60%;
+    height: 80vh;
+    padding: 20px;
+    float: left;
+}
+.img{
+    width: 27%;
+    height: 480px;
+    padding: 20px;
+    background-image: url(../images/23\ Easy\ Homemade\ Iced\ Coffee\ Recipes\ _\ Simple\ Coffee\ Drink\ Ideas\,\ Healthy\ Iced\ Coffee\ At\ Home.jpg);
+    background-size: cover;
+    float: left;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+.dots{
+    margin-left: 120px;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    background: rgb(194, 172, 172);
+    border-radius: 50%;
+    margin-top: 470px;
+    margin-left: 15px;
+    /* margin-right: 1px; */
+    float: left;
+}
+
+.dot.active{
+    background: rgb(105, 50, 50);
+}
+.dot:hover{
+    background: rgb(105, 50, 50);
+}
+
+.choose_title{
+    margin-top: 100px;
+    margin-left: 140px;
+    font-size: 40px;
+    text-transform: capitalize;
+    
+}
+.choose_line{
+    width: 70px;
+    height: 4px;
+    background: brown;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    margin-left: 140px;
+}
+.choose_p{
+    width: 550px;
+    margin-left: 140px;
+    color: rgb(105, 101, 101);
+}
+.choose_list{
+    width: 500px;
+    height: 600px;
+    margin-left: 140px;
+    margin-top: 15px;
+    color: rgb(75, 69, 69);
+}
+.contant_list li{
+    margin-top: 40px;
+    list-style: none;
+}
+/* ////////////////////////////////////////////////////// */
+.clients{
+    width: 100%;
+    height: 60vh;
+    background: url(../images/cup-coffee-with-steam-coming-out-it_940863-40946.avif);
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: absolute; */
+}
+.clients_overlay{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    background:rgba(63, 41, 41,0.7);
+}
