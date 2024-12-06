@@ -46,7 +46,7 @@ body {
 .search-icon {
   position: absolute;
   top: 55%;
-  left: 15px;
+  right:40px;
   transform: translateY(-50%);
   font-size: 15px;
   color: black;
@@ -186,6 +186,7 @@ body {
   left: 0;
   transition: 0.6s;
   background: rgb(165, 42, 42);
+  border-radius: 10px;
 }
 
 .fully_div:hover::after {
@@ -193,6 +194,7 @@ body {
   height: 100%;
   opacity: 0.4;
   z-index: -1;
+  border-radius: 10px;
 }
 
 .fully_icon .fully_icon {
@@ -388,6 +390,7 @@ body {
   left: 0;
   transition: 0.6s;
   background: rgb(165, 42, 42);
+  border-radius: 10px;
 }
 
 .offer_div:hover::after {
@@ -395,6 +398,7 @@ body {
   height: 100%;
   opacity: 0.54;
   z-index: -1;
+  border-radius: 10px;
 }
 
 .offer_title {
@@ -612,6 +616,7 @@ body {
   left: 0;
   transition: 0.6s;
   background: rgb(165, 42, 42);
+  border-radius: 10px;
 }
 
 .pricing-div:hover::after {
@@ -619,16 +624,17 @@ body {
   height: 100%;
   opacity: 0.54;
   z-index: -1;
+  border-radius: 10px;
 }
 
-.list {
+.pricing-list {
   list-style: none;
   margin-right: 50px;
   color: black;
   margin-top: 15px;
-  margin-left: 30px;
+  margin-left: 50px;
 }
-.list li {
+.pricing-list  li {
   margin-top: 20px;
 }
 .titlee {
@@ -767,15 +773,16 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-left: 10%;
+  padding-left: 12%;
+
 }
 .Team-item {
   float: left;
-  width: 24%;
+  width: 26%;
   height: 60%;
   background-color: rgb(224, 219, 219);
   border-radius: 10px;
-  padding: 17px 35px;
+  padding: 17px 30px;
   position: relative;
 }
 .center {
@@ -787,7 +794,7 @@ body {
 .Team-overlay {
   position: absolute;
   top: 0;
-  width: 99%;
+  width: 102%;
   height: 99%;
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
@@ -832,6 +839,7 @@ body {
   left: 0;
   transition: 0.6s;
   background: rgb(165, 42, 42);
+  border-radius: 10px;
 }
 
 .Team-item:hover::after {
@@ -874,16 +882,17 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  margin-left: 10%;
+  padding-left: 8%;
+  /* margin-left: 10%; */
   /* padding-bottom: 60px; */
 }
 .news-item {
   float: left;
-  width: 24%;
+  width: 28%;
   height: 80%;
   border: 1px solid brown;
   border-radius: 10px;
-  padding: 17px 35px;
+  padding: 17px 45px;
   position: relative;
 }
 .center-news {
@@ -896,10 +905,6 @@ body {
   border-radius: 10px;
 }
 .news-icons a {
-  /* display: block; */
-  /* width: 40px; */
-  /* height: 40px; */
-  /* float: left; */
   color: brown;
   text-align: center;
   font-size: 20px;
@@ -953,6 +958,7 @@ body {
   left: 0;
   transition: 0.6s;
   background: rgb(160, 59, 59);
+  border-radius: 10px;
 }
 
 .news-item:hover::after {
@@ -960,6 +966,7 @@ body {
   height: 100%;
   opacity: 0.54;
   z-index: -1;
+  border-radius: 10px;
 }
 /* //////////////////////////////////////////////// */
 .footer {
