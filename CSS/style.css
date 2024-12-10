@@ -53,22 +53,40 @@ body {
   pointer-events: none;
 }
 
-.list {
+.header-list {
   list-style: none;
   float: right;
   margin-right: 100px;
   margin-top: 20px;
 }
 
-.list li {
+.header-list li {
   display: inline-block;
   margin-left: 25px;
   font-weight: bolder;
 }
 
-.list li a {
+.header-list li a {
   color: white;
   text-decoration: none;
+}
+
+.header-list > li > a:after , .header-list li a.active:after {
+  content: "";
+  display: block;
+  width:0 ;
+  height: 3px;
+  background-color: brown;
+  transition:width 0.5s ;
+}
+
+.header-list > li > a.active:after {
+  width: 100%;
+}
+
+.header-list > li > a:hover:after {
+  width: 100%;
+
 }
 
 .home {
